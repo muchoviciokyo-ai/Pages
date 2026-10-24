@@ -5,8 +5,14 @@ Chatbot **por reglas** (palabras clave, **sin IA generativa**) que orienta sobre
 Actividad grupal · Semana 4 — Facultad de Ingeniería Industrial y de Sistemas, Universidad Nacional del Callao.
 
 ## 🔗 Enlaces
-- **Bot en línea:** https://script.google.com/macros/s/AKfycbzr8Ao0hM6ByBxIAKG_W_3btPPx3oUTDgjl713qB-TqZQWmNE0oGVxGn0Ha2dEvLsqJMw/exec
-- **Hoja de registros:** https://docs.google.com/spreadsheets/d/1ItLTURa7HVPIik_rhafvzjhaOqO4QjTHPndRaaklhq8/edit?gid=1623911637#gid=1623911637
+- **Bot en línea (GitHub Pages):** _https://TU-USUARIO.github.io/soportebot-ti-grupo3/_
+- **Hoja de registros:** _pegar aquí el enlace de Google Sheets (solo lectura)_
+
+## 🏗️ Arquitectura
+```
+GitHub Pages (index.html) ──fetch──► Apps Script (doPost / API) ──appendRow──► Google Sheets
+```
+La interfaz se publica en GitHub Pages; las reglas y el registro se ejecutan en Google Apps Script.
 
 ## 🎨 Personalización
 | Elemento | Valor |
@@ -30,14 +36,16 @@ Chatbot del equipo → Su propia hoja (Registros) → Tabla de frecuencias → G
 ## 📂 Archivos
 | Archivo | Contenido |
 |---|---|
-| `Code.gs` | Personalización, reglas, registro en Sheets y `configurarHoja()` |
-| `Index.html` | Interfaz del chat |
+| `index.html` | Interfaz del chat publicada en GitHub Pages |
+| `apps-script/Code.gs` | Personalización, reglas, API (`doPost`), registro en Sheets, `configurarHoja()` y `ejecutarPruebas()` |
+| `apps-script/Index.html` | Interfaz alternativa servida por Apps Script |
 
 ## 🚀 Instalación
 1. Crear un Google Sheet → **Extensiones → Apps Script**.
 2. Pegar `Code.gs` y crear un archivo HTML llamado `Index` con el contenido de `Index.html`.
 3. Ejecutar `configurarHoja` una vez y autorizar permisos. Para generar los registros de prueba, ejecutar `ejecutarPruebas`.
 4. **Implementar → Nueva implementación → Aplicación web** (Ejecutar como: Yo · Acceso: Cualquier usuario).
+5. Pegar la URL `/exec` en la constante `API_URL` de `index.html` y activar **GitHub Pages** (Settings → Pages → rama `main`, carpeta `/root`).
 
 ## 🧪 Pruebas (8 consultas ficticias)
 | # | Consulta | Tipo | Categoría esperada |
