@@ -5,8 +5,8 @@ Chatbot **por reglas** (palabras clave, **sin IA generativa**) que orienta sobre
 Actividad grupal · Semana 4 — Facultad de Ingeniería Industrial y de Sistemas, Universidad Nacional del Callao.
 
 ## 🔗 Enlaces
-- **Bot en línea:** _pegar aquí la URL de la aplicación web de Apps Script_
-- **Hoja de registros:** _pegar aquí el enlace de Google Sheets (solo lectura)_
+- **Bot en línea:** https://script.google.com/macros/s/AKfycbzr8Ao0hM6ByBxIAKG_W_3btPPx3oUTDgjl713qB-TqZQWmNE0oGVxGn0Ha2dEvLsqJMw/exec
+- **Hoja de registros:** https://docs.google.com/spreadsheets/d/1ItLTURa7HVPIik_rhafvzjhaOqO4QjTHPndRaaklhq8/edit?gid=1623911637#gid=1623911637
 
 ## 🎨 Personalización
 | Elemento | Valor |
